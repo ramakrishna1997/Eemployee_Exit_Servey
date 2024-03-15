@@ -1,0 +1,1447 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="30" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Employee_Exit_Survey.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Record_id" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Separation_Type" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="case_date" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Start_Date" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Date_of_join" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Position" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Classification" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Region" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Business Unit" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Employment Status" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Gender" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+            <Field name="Age" size="254" source="File: C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Employee_Exit_Survey.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="210" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Separation_Type" action="GroupBy" rename="Separation_Type" />
+            <SummarizeField field="Separation_Type" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="390" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="210" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Region" action="GroupBy" rename="Region" />
+            <SummarizeField field="Region" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="402" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Business Unit" action="GroupBy" rename="Business Unit" />
+            <SummarizeField field="Gender" action="GroupBy" rename="Gender" />
+            <SummarizeField field="Business Unit" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="414" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="246" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="Separation_Type" action="GroupBy" rename="Separation_Type" />
+            <SummarizeField field="Employment Status" action="GroupBy" rename="Employment Status" />
+            <SummarizeField field="Start_Date" action="GroupBy" rename="Start_Date" />
+            <SummarizeField field="Date_of_join" action="GroupBy" rename="Date_of_join" />
+            <SummarizeField field="Separation_Type" action="Count" rename="Count" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="402" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="1033">
+            <Field field="Count" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Count - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="618" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Separation_Type" selected="True" Alignment="Left" />
+            <Field name="Count" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="642" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Region" selected="True" Alignment="Left" />
+            <Field name="Count" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="678" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Business Unit" selected="True" Alignment="Left" />
+            <Field name="Count" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="True" Alignment="Right" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="666" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="False" />
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="Separation_Type" selected="True" Alignment="Left" />
+            <Field name="Employment Status" selected="True" Alignment="Left" />
+            <Field name="Start_Date" selected="True" Alignment="Left" />
+            <Field name="Date_of_join" selected="True" Alignment="Left" Width="" />
+            <Field name="Count" selected="True" Alignment="Right" />
+            <Field name="*Unknown" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="Arial" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="Arial" Size="10" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="0" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Basic Table</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="894" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_85960b6834e17d46a53aaedd6912d7d3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="906" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_6b3153ab179d7c4db72e22ee141098b3~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="918" y="366" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_1069c3ec2e8bea488a477f766a798c07~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="894" y="486" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_6d7286dfcfeb154d84c26b11df590c1b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="534" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>&lt;b&gt;Bar Graph&lt;/b&gt;</name>
+              <orientation>v</orientation>
+              <xsrc>Separation_Type</xsrc>
+              <ysrc>Count</ysrc>
+              <textposition>auto</textposition>
+              <marker>
+                <line>
+                  <width>0</width>
+                  <color>rgb(222, 72, 72)</color>
+                </line>
+                <opacity>1</opacity>
+                <colorsrc>Count</colorsrc>
+                <color>23</color>
+                <color>15</color>
+                <color>11</color>
+                <color>11</color>
+                <color>9</color>
+                <color>7</color>
+                <color>6</color>
+                <color>2</color>
+                <color>2</color>
+                <colorscale json:Array="true">
+                  <colorscale>0</colorscale>
+                  <colorscale>#1b9e77</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.14285714285714285</colorscale>
+                  <colorscale>#d95f02</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.2857142857142857</colorscale>
+                  <colorscale>#7570b3</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.42857142857142855</colorscale>
+                  <colorscale>#e7298a</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.5714285714285714</colorscale>
+                  <colorscale>#66a61e</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.7142857142857143</colorscale>
+                  <colorscale>#e6ab02</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>0.8571428571428571</colorscale>
+                  <colorscale>#a6761d</colorscale>
+                </colorscale>
+                <colorscale json:Array="true">
+                  <colorscale>1</colorscale>
+                  <colorscale>#666666</colorscale>
+                </colorscale>
+                <showscale>false</showscale>
+              </marker>
+              <textsrc>Count</textsrc>
+              <hoverinfo>x+y+text</hoverinfo>
+              <textfont>
+                <size>12</size>
+              </textfont>
+              <visible>true</visible>
+              <autocolorscale>false</autocolorscale>
+            </Traces>
+            <Layout>
+              <title>
+                <text>&lt;b&gt;Separation_Type with count&lt;/b&gt;</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+                <color>rgb(13, 35, 69)</color>
+              </font>
+              <autosize>false</autosize>
+              <width>698</width>
+              <height>850</height>
+              <showlegend>false</showlegend>
+              <hovermode>false</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>8.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>&lt;br&gt;</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                  <family>sans-serif</family>
+                </tickfont>
+                <nticks>0</nticks>
+                <showticklabels>true</showticklabels>
+                <showgrid>false</showgrid>
+                <tickangle>auto</tickangle>
+                <showspikes>true</showspikes>
+                <tickmode>auto</tickmode>
+                <tick0>0</tick0>
+                <dtick>1</dtick>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>-2</range>
+                <range>25</range>
+                <autorange>false</autorange>
+                <title>
+                  <text>&lt;br&gt;</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <showspikes>true</showspikes>
+                <type>linear</type>
+              </yaxis>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <margin>
+                <pad>0</pad>
+                <t>101</t>
+                <b>79</b>
+                <l>79</l>
+                <r>79</r>
+              </margin>
+              <plot_bgcolor>rgb(255, 255, 255)</plot_bgcolor>
+              <ppi>72</ppi>
+              <dragmode>zoom</dragmode>
+              <bargap>0.24</bargap>
+              <barmode>stack</barmode>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="654" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_8637fef5edb1444f99a393998aa7b71b~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="510" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>pie</type>
+              <mode>markers</mode>
+              <name>&lt;b&gt;PiE CHART&lt;/b&gt;</name>
+              <valuessrc>Count</valuessrc>
+              <labelssrc>Region</labelssrc>
+              <marker>
+                <line>
+                  <width>0</width>
+                </line>
+              </marker>
+              <textinfo>label+value+percent</textinfo>
+              <hole>0</hole>
+            </Traces>
+            <Layout>
+              <title>
+                <text>&lt;b&gt;Region Base&lt;/b&gt;</text>
+              </title>
+              <font>
+                <family>serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>700</width>
+              <height>849</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-1</range>
+                <range>6</range>
+                <autorange>true</autorange>
+              </xaxis>
+              <yaxis>
+                <range>-1</range>
+                <range>4</range>
+                <autorange>true</autorange>
+              </yaxis>
+              <margin>
+                <pad>0</pad>
+                <t>100</t>
+                <b>80</b>
+                <l>80</l>
+                <r>80</r>
+              </margin>
+              <legend>
+                <font>
+                  <size>12</size>
+                  <family>sans-serif</family>
+                  <color>rgb(68, 68, 68)</color>
+                </font>
+                <borderwidth>0</borderwidth>
+              </legend>
+              <ppi>72</ppi>
+              <extendpiecolors>true</extendpiecolors>
+              <piecolorway>#3366cc</piecolorway>
+              <piecolorway>#dc3912</piecolorway>
+              <piecolorway>#ff9900</piecolorway>
+              <piecolorway>#109618</piecolorway>
+              <piecolorway>#990099</piecolorway>
+              <piecolorway>#0099c6</piecolorway>
+              <piecolorway>#dd4477</piecolorway>
+              <piecolorway>#66aa00</piecolorway>
+              <piecolorway>#b82e2e</piecolorway>
+              <piecolorway>#316395</piecolorway>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_41c4dc495aa3b04abca8876377af5e96~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="PlotlyCharting">
+        <Position x="510" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ChartingFields>
+            <Traces json:Array="true" xmlns:json="http://james.newtonking.com/projects/json">
+              <type>bar</type>
+              <mode>markers</mode>
+              <name>&lt;b&gt;BAR CHART&lt;/b&gt;</name>
+              <orientation>v</orientation>
+              <xsrc>Business Unit</xsrc>
+              <ysrc>Count</ysrc>
+              <transforms json:Array="true">
+                <type>groupby</type>
+                <groupssrc>Gender</groupssrc>
+                <styles>
+                  <target>Female</target>
+                  <value>
+                    <marker>
+                      <line>
+                        <width>0</width>
+                      </line>
+                    </marker>
+                    <textposition>outside</textposition>
+                    <textfont>
+                      <size>12</size>
+                    </textfont>
+                    <constraintext>inside</constraintext>
+                    <hoverinfo>x+y+text</hoverinfo>
+                  </value>
+                </styles>
+                <styles>
+                  <target>Male</target>
+                  <value>
+                    <marker>
+                      <line>
+                        <width>0</width>
+                      </line>
+                    </marker>
+                    <textposition>outside</textposition>
+                    <textfont>
+                      <size>12</size>
+                    </textfont>
+                    <traceIndex>0</traceIndex>
+                  </value>
+                </styles>
+                <groups>Female</groups>
+                <groups>Male</groups>
+                <groups>Female</groups>
+                <groups>Male</groups>
+                <groups>Female</groups>
+                <groups>Female</groups>
+                <groups>Female</groups>
+                <groups>Male</groups>
+                <groups>Male</groups>
+                <groups>Male</groups>
+                <groups>Male</groups>
+                <groups>Female</groups>
+                <groups>Female</groups>
+                <groups>Male</groups>
+                <groups>Male</groups>
+                <groups>Female</groups>
+                <groups>Male</groups>
+                <groups>Female</groups>
+                <groups>Female</groups>
+              </transforms>
+              <textposition>None</textposition>
+              <textsrc>Gender</textsrc>
+            </Traces>
+            <Layout>
+              <title>
+                <text>&lt;b&gt;Gender concerning Bussiness Unit&lt;/b&gt;</text>
+              </title>
+              <font>
+                <family>sans-serif</family>
+                <size>12</size>
+              </font>
+              <autosize>false</autosize>
+              <width>698</width>
+              <height>850</height>
+              <showlegend>true</showlegend>
+              <hovermode>closest</hovermode>
+              <xaxis>
+                <range>-0.5</range>
+                <range>11.5</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>&lt;br&gt;</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <nticks>0</nticks>
+                <showticklabels>true</showticklabels>
+                <showgrid>true</showgrid>
+                <showline>true</showline>
+                <type>category</type>
+              </xaxis>
+              <yaxis>
+                <range>0</range>
+                <range>26.315789473684209</range>
+                <autorange>true</autorange>
+                <title>
+                  <text>Count</text>
+                </title>
+                <tickfont>
+                  <size>12</size>
+                </tickfont>
+                <type>linear</type>
+              </yaxis>
+              <legend>
+                <font>
+                  <size>12</size>
+                </font>
+                <borderwidth>0</borderwidth>
+                <bgcolor>rgb(255, 239, 239)</bgcolor>
+                <orientation>v</orientation>
+                <traceorder>reversed</traceorder>
+              </legend>
+              <margin>
+                <pad>0</pad>
+                <t>101</t>
+                <b>79</b>
+                <l>79</l>
+                <r>79</r>
+              </margin>
+              <ppi>72</ppi>
+              <barmode>stack</barmode>
+              <barnorm>
+              </barnorm>
+            </Layout>
+          </ChartingFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerInteractiveCharting" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="606" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_30863b43544c15458e606863afad1afd~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="VisualLayout">
+        <Position x="1170" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <LayoutFields>
+            <Document>
+              <TempFileType>pdf</TempFileType>
+              <PortraitMode value="true" />
+              <RenderType>PDF</RenderType>
+              <PaperType bottom="48" height="1122.5115" left="48" right="48" top="48" width="794.8288500000001">
+                <PageType>A4 (210mm x 297mm)</PageType>
+                <MarginType>0.5in</MarginType>
+              </PaperType>
+            </Document>
+            <Layout>
+              <Node fusedChildren="false" key="1" orientation="vertical" repeatDirection="vertical">
+                <Node fusedChildren="false" key="2" orientation="vertical" repeatDirection="vertical">
+                  <Node fusedChildren="false" key="3" orientation="vertical" repeatDirection="vertical">
+                    <Node fusedChildren="false" key="4" orientation="vertical" repeatDirection="vertical">
+                      <Node connectionName="#1" fieldName="Image" height="721" isFused="false" isLocked="true" key="5" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Image:" subWidth0="721" subWidthCount="1" top="0" width="721" />
+                      <Node connectionName="#10" fieldName="Text" height="24" isFused="false" isLocked="true" key="6" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="698" subWidthCount="1" top="42" width="698" />
+                      <Node connectionName="#2" fieldName="Table" height="173.65625" isFused="false" isLocked="true" key="7" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="721" subWidthCount="1" top="81" width="721" />
+                      <Node connectionName="#3" fieldName="Chart" height="856" isFused="false" isLocked="false" key="8" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="704" subWidthCount="1" top="87" width="704" />
+                      <Node connectionName="#11" fieldName="Text" height="24" isFused="false" isLocked="true" key="9" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="693" subWidthCount="1" top="0" width="693" />
+                      <Node connectionName="#4" fieldName="Table" height="77.65625" isFused="false" isLocked="true" key="10" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="700" subWidthCount="1" top="133" width="700" />
+                      <Node connectionName="#5" fieldName="Chart" height="807.6875" isFused="false" isLocked="true" key="11" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="667" subWidthCount="1" top="138" width="667" />
+                      <Node connectionName="#12" fieldName="Text" height="24" isFused="false" isLocked="true" key="12" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="699" subWidthCount="1" top="0" width="699" />
+                    </Node>
+                    <Node connectionName="#6" fieldName="Table" height="333.65625" isFused="false" isLocked="true" key="13" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="718" subWidthCount="1" top="0" width="718" />
+                    <Node connectionName="#7" fieldName="Chart" height="856" isFused="false" isLocked="false" key="14" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Chart:" subWidth0="704" subWidthCount="1" top="89" width="704" />
+                  </Node>
+                  <Node connectionName="#13" fieldName="Text" height="24" isFused="false" isLocked="true" key="17" left="1" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="698" subWidthCount="1" top="50" width="698" />
+                  <Node connectionName="#8" fieldName="Table" height="1293.65625" isFused="false" isLocked="true" key="15" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Table:Basic:" subWidth0="718" subWidthCount="1" top="84" width="718" />
+                </Node>
+                <Node connectionName="#9" fieldName="Text" height="42" isFused="false" isLocked="true" key="16" left="0" orientation="horizontal" repeatDirection="vertical" source="Report:Text:" subWidth0="281" subWidthCount="1" top="34" width="281" />
+              </Node>
+            </Layout>
+            <TempFiles>{"#2":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_6d0b316011cd43fc9e0b8c549657964c_.yxdb","#4":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_ef5e854eed91445ba66b8ff987eaf0f6_.yxdb","#6":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_ea486c0d4df74e6eb4a35a304f9064c7_.yxdb","#8":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_8d760117add54d129dc698767de30cc3_.yxdb","#3":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_3f5ca585f37f4d74af47082abd3748de_.yxdb","#5":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_145721a001644eb3bffd7929524b53e9_.yxdb","#7":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_6b8ea5e03629445ca1830c7da32bde0f_.yxdb","#1":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_7fa88294f14d4fec924bbc9320afcf09_.yxdb","#9":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_35073520133d453a9a1486be4cf1522f_.yxdb","#10":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_d3cc29907dd54a2e81dc61acee69284c_.yxdb","#11":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_950aed3b74c943ba9148da01e7ccc210_.yxdb","#12":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_73767dfcc73949e0b0907d21658d962f_.yxdb","#13":"C:\\Users\\RAMAKR~1\\AppData\\Local\\Temp\\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\\Engine_11028_6467fc84245443a99dc0a3751cb7c87b_.yxdb"}</TempFiles>
+            <OriginalSnippets>{"#7":{"Chart":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_90be9022-1984-44e2-8a94-4214ff53a14a_.html"]},"#3":{"Chart":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_a77cd2f9-6bfb-451f-b59c-7a30fb01b9b8_.html"]},"#12":{"Text":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_e150b3e6-e6b5-4eeb-8704-3fc7c80b576b_.html"]},"#13":{"Text":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_ad383594-db49-42fb-b217-cd9a1c090f1a_.html"]},"#10":{"Text":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_90cc0b00-92ed-40b4-b15a-056ca3cf5714_.html"]},"#4":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_4f60fdfc-aa02-448e-bbb3-4e19d5787789_.html"]},"#11":{"Text":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_af50c5e4-40be-4370-a0fd-831aa1e572a8_.html"]},"#8":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_4bbf1d42-1d8c-4397-aa54-e15feeb071a5_.html"]},"#5":{"Chart":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_07045298-2a8a-4bce-b714-7f38708fcebb_.html"]},"#1":{"Image":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_6e7b7e74-898c-42ff-b49e-b54287171bf2_.png"]},"#9":{"Text":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_b6cdbd62-0cfc-457d-ae9d-76fc06a1ae32_.html"]},"#6":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_ee1ad35a-7493-432c-b30d-fdda3c17df49_.html"]},"#2":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_b1f8e3f2-ef03-4d38-8f87-618473fbe1e8_.html"]}}</OriginalSnippets>
+            <OriginalThumbnails>{"#7":{},"#3":{},"#12":{},"#13":{},"#10":{},"#4":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_40d03bda-e353-4ad0-9867-6546344beafc_.html"]},"#11":{},"#8":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_65b529c0-b5cd-420c-807a-b8d076191ae4_.html"]},"#5":{},"#1":{"Image":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_ad6977a8-0942-4dd9-936d-261c8b8298f7_.png"]},"#9":{},"#6":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_aede614c-4b35-449c-a325-a4ab06b9176b_.html"]},"#2":{"Table":["C:\\Users\\Ramakrishna\\AppData\\Local\\Temp\\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_\\Alteryx_11028_c1c1fe1e-ebee-400f-8a88-7b9c19cdcc79_.html"]}}</OriginalThumbnails>
+            <AllowResizing>true</AllowResizing>
+            <CanJoin>false</CanJoin>
+            <VisFolderPath>C:\Users\Ramakrishna\AppData\Local\Temp\Alteryx_11028_da5400bc-b280-457c-941c-61c91f97a6f1_</VisFolderPath>
+            <NumDeletions>0</NumDeletions>
+            <NumTinaToggleUses>1</NumTinaToggleUses>
+            <NumSnippetMoves>1</NumSnippetMoves>
+            <NumSnippetRearrangements>0</NumSnippetRearrangements>
+            <NumIncomingConnections>13</NumIncomingConnections>
+          </LayoutFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="ComposerVisualLayout" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerImage.PortfolioComposerImage">
+        <Position x="834" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ImageMode>File</ImageMode>
+          <Filename>C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Exite servey.jpeg</Filename>
+          <ModifyFilename value="False" />
+          <StopIfNotFound value="True" />
+          <ImageStyle FixedWidth="false" ImageWidth="200" ShowBorder="false" BorderWidth="1" BorderColor="#000000" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerImagePlugin" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_6695cd9686bed04796a2f8abd85733ff~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1266" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\RAMAKR~1\AppData\Local\Temp\Engine_3712_4ce55c1450c4da4caa57419cfad39902_\Engine_3712_5e9b278a8a66a744aaea897c5da100a1~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="DateTimeNow">
+        <Position x="978" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Language">English</Value>
+          <Value name="OutputFormat">HH:mm:ss</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="DateTimeNow\Supporting_Macros\DTNEngine.yxmc" EngineDll="Macro" EngineDllEntryPoint="DateTimeNow\Supporting_Macros\DTNEngine.yxmc" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1074" y="342" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\fs24 Employee Exit Servey Report :- [DateTimeNow:A]\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Employee Exit Servey Report :-...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerRender.PortfolioComposerRender">
+        <Position x="1266" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFileType />
+          <OutputFile>C:\Users\Ramakrishna\Desktop\Employeement Exit servey Analysis\Report of the Employee Exit Servey.pdf</OutputFile>
+          <BatchMode value="False" />
+          <DataField>Layout</DataField>
+          <Separator>Whitespace</Separator>
+          <EmbedDependencies value="False" />
+          <ShowHeader value="False" />
+          <ShowFooter value="False" />
+          <PortraitMode value="True" />
+          <PaperType Width="595" Height="841" Left="36" Right="36" Top="36" Bottom="36" />
+          <DefaultStyles>
+            <Style Name="TextStyle" FontName="Arial" FontSize="14" Justify="Left" ForeColor="#000000" Locale="1033" />
+          </DefaultStyles>
+          <PNGResolution>1</PNGResolution>
+          <PNGLargerAction>squeeze</PNGLargerAction>
+          <PNGLargerThanPageChoice>warning</PNGLargerThanPageChoice>
+          <PNGTransparentBG value="False" />
+          <PNGBackColor value="#ffffff" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerRenderPlugin" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1050" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\b\fs24 Speration_Type with Count\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Speration_Type with Count</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1170" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\b\fs24 Region Base with count\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Region Base with count</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1266" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\b\fs24 Bussiness Unit with respect to Gender\b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Bussiness Unit with respect to...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerText.PortfolioComposerText">
+        <Position x="1362" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Images />
+          <Output>Text</Output>
+          <HeaderMode value="False" />
+          <RawMode value="False" />
+          <ValidatePCXML value="True" />
+          <Message />
+          <RichTextMode value="True" />
+          <RichTextString><![CDATA[{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Arial;}}
+\viewkind4\uc1\pard\qc\b\fs24 Empolyee Status \b0\par
+}
+]]></RichTextString>
+          <Styles>
+            <Style Name="TextStyle" />
+          </Styles>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Empolyee Status ]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTextPlugin" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#4">
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#6">
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#8">
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#5">
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#7">
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#9">
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#10">
+      <Origin ToolID="32" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#11">
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#12">
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection name="#13">
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="DTN" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Employee Exit Survey POC</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="8568e849-b1f6-4aea-be26-a76c9ebe8749" />
+      <Telemetry>
+        <PreviousWorkflowId value="dc635a31-8822-4569-a44c-06985e629cb2" />
+        <OriginWorkflowId value="dc635a31-8822-4569-a44c-06985e629cb2" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

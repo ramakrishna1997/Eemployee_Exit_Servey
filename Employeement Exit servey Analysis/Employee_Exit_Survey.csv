@@ -1,0 +1,87 @@
+Record_id,Separation_Type,case_date,Start_Date,Date_of_join,Position,Classification,Region,Business Unit,Employment Status,Gender,Age
+1,Ill Health Retirement,Aug-12,1984,2004,Public Servant,A01-A04,Central Office,Corporate Strategy and Peformance,Permanent Full-time,Male,56-60
+2,Age Retirement,2012,1999,1999,Teacher,Primary,Central Office,Education Queensland,Permanent Full-time,Male,61 or older
+3,Age Retirement,2012,1974,1977,Teacher,Primary,Central Office,Education Queensland,Permanent Full-time,Male,56-60
+4,Resignation-Other employer,2012,2005,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Permanent Full-time,Female,21-25
+5,Contract Expired,2012,2009,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,26-30
+6,Contract Expired,2012,2010,2012,Public Servant,A01-A04,Central Office,Information and Technologies,Temporary Full-time,Male,26-30
+7,Termination,2012,2007,2007,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,51-55
+8,Contract Expired,2012,2008,2012,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,21-25
+9,Termination,2012,2007,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,26-30
+10,Contract Expired,2012,1968,2004,Public Servant,AO5-AO7,Central Office,Other,Temporary Part-time,Female,61 or older
+11,Contract Expired,2012,2008,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,31-35
+12,Termination,2012,2009,2009,Public Servant,AO5-AO7,Central Office,Education Queensland,Temporary Full-time,Female,26-30
+13,Resignation-Other employer,2012,2012,2012,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,51-55
+14,Other,2012,2008,2008,Public Servant,A01-A04,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,26-30
+15,Termination,2012,1996,2009,Public Servant,A01-A04,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,61 or older
+16,Other,2012,1993,2012,Public Servant,AO5-AO7,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,36-40
+17,Termination,2012,2002,2008,Public Servant,AO5-AO7,Central Office,Education Queensland,Permanent Full-time,Female,36-40
+18,Voluntary Early Retirement (VER),2012,1971,2005,Public Servant,AO5-AO7,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Male,61 or older
+19,Voluntary Early Retirement (VER),2012,2006,2010,Public Servant,A01-A04,Central Office,Education Queensland,Permanent Full-time,Female,21-25
+20,Other,2012,2009,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,21-25
+21,Resignation-Other employer,2012,2011,2011,Public Servant,A01-A04,Central Office,Other,Temporary Part-time,Male,21-25
+22,Voluntary Early Retirement (VER),2012,1980,2004,Public Servant,AO5-AO7,Central Office,Education Queensland,Permanent Full-time,Female,56-60
+23,Voluntary Early Retirement (VER),2012,1969,2002,Professional Officer,PO1-PO4,Central Office,Education Queensland,Permanent Full-time,Male,61 or older
+24,Voluntary Early Retirement (VER),2012,2005,2008,Public Servant,AO5-AO7,Central Office,Human Resources,Permanent Full-time,Male,26-30
+25,Other,2012,2004,2010,Public Servant,AO5-AO7,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,36-40
+26,Other,2012,2008,2008,Public Servant,AO5-AO7,Central Office,Human Resources,Permanent Full-time,Female,61 or older
+27,Voluntary Early Retirement (VER),2012,1987,1992,Professional Officer,PO1-PO4,Central Office,Education Queensland,Permanent Full-time,Male,46-50
+28,Other,2012,2002,2007,Public Servant,AO8 and Above,Central Office,Other,Permanent Full-time,Male,56-60
+29,Voluntary Early Retirement (VER),2012,2007,2007,Public Servant,A01-A04,Central Office,Other,Permanent Full-time,Female,31-35
+30,Voluntary Early Retirement (VER),2012,2005,2007,Public Servant,A01-A04,Central Office,Education Queensland,Permanent Part-time,Female,26-30
+31,Voluntary Early Retirement (VER),2012,1996,2011,Public Servant,A01-A04,Central Office,Corporate Procurement,Permanent Full-time,Male,41-45
+32,Voluntary Early Retirement (VER),2012,2010,2012,Public Servant,AO5-AO7,Central Office,Corporate Strategy and Peformance,Permanent Full-time,Female,26-30
+33,Voluntary Early Retirement (VER),2012,2006,2011,Public Servant,A01-A04,Central Office,Information and Technologies,Permanent Part-time,Female,31-35
+34,Other,2012,2006,2006,Public Servant,A01-A04,Central Office,Human Resources,Permanent Part-time,Female,41-45
+35,Other,2012,1992,2007,Public Servant,AO5-AO7,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,61 or older
+36,Voluntary Early Retirement (VER),2012,2007,2009,Public Servant,AO5-AO7,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Female,26-30
+37,Resignation-Other employer,2012,2006,2007,Public Servant,AO8 and Above,Central Office,Other,Permanent Full-time,Female,41-45
+38,Voluntary Early Retirement (VER),2012,1971,2004,Public Servant,AO5-AO7,Central Office,Other,Permanent Full-time,Female,56-60
+39,Other,2012,1995,2009,Public Servant,A01-A04,Central Office,Education Queensland,Permanent Full-time,Female,56-60
+40,Voluntary Early Retirement (VER),2012,2001,2012,Public Servant,AO8 and Above,Central Office,Education Queensland,Permanent Full-time,Male,31-35
+41,Voluntary Early Retirement (VER),2012,1993,2010,Public Servant,AO8 and Above,Central Office,Education Queensland,Permanent Full-time,Female,51-55
+42,Resignation-Other employer,2012,2008,2010,Public Servant,A01-A04,Central Office,Finance,Permanent Part-time,Female,21-25
+43,Termination,2012,1970,2005,Public Servant,AO5-AO7,Central Office,Information and Technologies,Permanent Full-time,Male,51-55
+44,Ill Health Retirement,2012,1996,2002,Teacher,Primary,Central Office,Early Childhood Education and Care,Permanent Part-time,Female,46-50
+45,Termination,2012,1987,2010,Public Servant,AO8 and Above,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Male,51-55
+46,Contract Expired,2012,2011,2011,Public Servant,AO5-AO7,Central Office,Education Queensland,Temporary Full-time,Female,36-40
+47,Voluntary Early Retirement (VER),2012,1992,2008,Public Servant,AO8 and Above,Central Office,Human Resources,Permanent Full-time,Male,46-50
+48,Other,2012,1979,2005,Public Servant,A01-A04,Central Office,Education Queensland,Permanent Full-time,Female,36-40
+49,Voluntary Early Retirement (VER),2012,1976,2003,Public Servant,AO5-AO7,North Coast,Human Resources,Permanent Part-time,Male,51-55
+50,Resignation-Other employer,2012,2007,2007,Teacher,Secondary,Central Office,Education Queensland,Permanent Full-time,Female,26-30
+51,Termination,2012,1970,2005,Public Servant,AO8 and Above,Central Office,Training and Tertiary Education Queensland,Permanent Full-time,Male,61 or older
+52,Other,2012,2001,2005,Public Servant,AO5-AO7,Central Office,"Policy, Research, Legislation",Permanent Full-time,Female,51-55
+53,Voluntary Early Retirement (VER),2012,2003,2012,Public Servant,AO5-AO7,Central Office,Infrastructure,Permanent Full-time,Female,26-30
+54,Contract Expired,2012,2011,2011,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,41-45
+55,Contract Expired,2012,2011,2011,Public Servant,A01-A04,Central Office,Information and Technologies,Casual,Male,21-25
+56,Age Retirement,2013,1984,2006,Public Servant,AO8 and Above,Central Office,Infrastructure,Permanent Full-time,Male,61 or older
+57,Voluntary Early Retirement (VER),2012,2003,2009,Public Servant,AO8 and Above,Central Office,Other,Permanent Full-time,Male,56-60
+58,Contract Expired,2013,2012,2012,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Male,36-40
+59,Termination,2012,2010,2010,Public Servant,AO8 and Above,Central Office,Information and Technologies,Temporary Full-time,Male,31-35
+60,Resignation-Move overseas/interstate,2013,2013,2013,Public Servant,A01-A04,Central Office,Human Resources,Permanent Full-time,Female,56-60
+61,Resignation-Move overseas/interstate,2012,2011,2013,Public Servant,AO5-AO7,Central Office,Information and Technologies,Temporary Full-time,Female,36-40
+62,Resignation-Move overseas/interstate,2013,2013,2013,Public Servant,A01-A04,Central Office,Other,Temporary Full-time,Female,26-30
+63,Resignation-Other employer,2013,2002,2002,Teacher,Primary,Central Queensland,Education Queensland,Permanent Full-time,Female,31-35
+64,Age Retirement,2013,1965,1975,Teacher,Secondary,Central Office,Education Queensland,Permanent Full-time,Female,61 or older
+65,Voluntary Early Retirement (VER),2013,1990,1995,Teacher,Secondary,Central Office,Education Queensland,Permanent Full-time,Female,56-60
+66,Resignation-Move overseas/interstate,2013,1999,2012,Public Servant,AO8 and Above,Central Office,Indigenous Education and Training Futures,Permanent Full-time,Male,36-40
+67,Voluntary Early Retirement (VER),Sep-13,1981,1996,Teacher,Secondary,Central Office,Education Queensland,Permanent Part-time,Female,51-55
+68,Voluntary Early Retirement (VER),Jun-13,1990,2007,Public Servant,AO5-AO7,Central Office,Education Queensland,Permanent Full-time,Female,51-55
+69,Resignation-Other reasons,Jul-13,2004,2005,Public Servant,AO5-AO7,Central Office,Education Queensland,Permanent Full-time,Female,31-35
+70,Age Retirement,Jul-13,1984,1986,Teacher,Primary,Central Office,Education Queensland,Permanent Full-time,Female,56-60
+71,Resignation-Other employer,Jul-13,2010,2010,Public Servant,AO5-AO7,Central Office,Other,Permanent Full-time,Female,26-30
+72,Resignation-Other reasons,May-13,2010,2010,Public Servant,A01-A04,Central Office,Other,Permanent Part-time,Female,26-30
+73,Age Retirement,Jul-14,1972,1972,Teacher,Secondary,Central Office,Education Queensland,Permanent Part-time,Male,61 or older
+74,Age Retirement,Sep-13,1981,1997,Public Servant,AO5-AO7,Central Office,Corporate Strategy and Peformance,Permanent Full-time,Male,51-55
+75,Resignation-Other employer,Jan-14,2012,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Temporary Full-time,Male,21-25
+76,Voluntary Early Retirement (VER),Sep-13,1988,1988,Public Servant,AO8 and Above,Central Office,Education Queensland,Permanent Part-time,Female,61 or older
+77,Contract Expired,Dec-13,2013,2013,Public Servant,A01-A04,Central Office,Other,Temporary Part-time,Female,21-25
+78,Resignation-Other employer,Jan-14,1985,2010,Public Servant,AO8 and Above,Central Office,Corporate Strategy and Peformance,Permanent Full-time,Male,56-60
+79,Resignation-Move overseas/interstate,Oct-13,2013,2013,Public Servant,A01-A04,Central Office,"Policy, Research, Legislation",Permanent Full-time,Female,51-55
+80,Contract Expired,Sep-13,2013,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Casual,Male,26-30
+81,Contract Expired,Sep-13,2013,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Temporary Full-time,Male,31-35
+82,Contract Expired,Sep-13,2013,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Casual,Male,21-25
+83,Contract Expired,Sep-13,2013,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Casual,Male,51-55
+84,Contract Expired,Sep-13,2013,2013,Public Servant,A01-A04,Central Office,Information and Technologies,Casual,Male,31-35
+85,Resignation-Other employer,Dec-13,1991,2004,Public Servant,A01-A04,Central Office,Information and Technologies,Permanent Full-time,Female,41-45
+86,Resignation-Move overseas/interstate,Jan-14,2009,2009,Public Servant,A01-A04,Central Office,Education Queensland,Permanent Full-time,Female,31-35
